@@ -5,7 +5,7 @@ A quick library for uploading tracking to woocommerce using their paid tracking 
 
      var trackingUploader = new WCTrackingUploader("yoursecret", "yourusername", "yoursite");
      trackingUploader.SubmitTrackingInfo("trackingid", "trackinglink", "carrier", DateTime.Now,
-     3065663, "woocommerce order id");  
+     "woocommerce order id");  
             
 
 
