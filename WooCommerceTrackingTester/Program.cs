@@ -11,7 +11,7 @@ namespace WooCommerceTrackingTester
         static void Main(string[] args)
         {
             var trackingUploader = new WCTrackingUploader("yoursecret", "yourusername", "yoursite");
-            trackingUploader.SubmitTrackingInfo("trackingid", "trackinglink", "carrier", DateTime.Now, 3065663, "woocommerce order id");
+            trackingUploader.SubmitTrackingInfo("trackingid", "trackinglink", "carrier", DateTime.Now, "woocommerce order id");
 
             Console.ReadKey();
         }

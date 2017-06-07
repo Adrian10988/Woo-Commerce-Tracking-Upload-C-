@@ -58,7 +58,7 @@ namespace WooCommerceTrackingTester
             _httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
         }
 
-        public Response SubmitTrackingInfo(string trackingId, string trackingUrl, string carrier, DateTime lastUpdated, int orderId, string storeReferenceId)
+        public Response SubmitTrackingInfo(string trackingId, string trackingUrl, string carrier, DateTime lastUpdated, string storeReferenceId)
         {
             var container = new
             {
@@ -75,11 +75,11 @@ namespace WooCommerceTrackingTester
                 var formattedBaseUrl = string.Format(_storeUrl + _createShipmentTrackingEndpoint, storeReferenceId);
                 if (formattedBaseUrl.Contains("https://"))
                 {
-                    
+
                     securityFragments = GenerateSecurityFragmentsSSL(HttpMethod.Post, formattedBaseUrl);
                 }
-                    
-                
+
+
                 else
                     securityFragments = GenerateSecurityUriFragments(formattedBaseUrl, HttpMethod.Post);
 
@@ -92,7 +92,7 @@ namespace WooCommerceTrackingTester
 
                 return response;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 return BuildResponse(e);
             }
@@ -113,7 +113,7 @@ namespace WooCommerceTrackingTester
                 var response = _httpClient.DeleteAsync(string.Format(finalUrl)).Result;
                 return BuildResponse(response);
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 return BuildResponse(e);
             }
@@ -136,7 +136,7 @@ namespace WooCommerceTrackingTester
 
             HttpStatusCode code = HttpStatusCode.BadRequest;
 
-            if(response.data != null && response.data.status != null)
+            if (response.data != null && response.data.status != null)
             {
                 var c = (string)response.data.status;
 
@@ -166,7 +166,7 @@ namespace WooCommerceTrackingTester
                         code = HttpStatusCode.Forbidden;
                         r.Succeeded = false;
                         break;
-                    
+
                 }
             }
 
@@ -238,7 +238,7 @@ namespace WooCommerceTrackingTester
             return new HMACSHA1(key).ComputeHash(message);
         }
 
-        private string GenerateSignature(HttpMethod httpMethod,  Dictionary<string, string> parameters, string completeUri)
+        private string GenerateSignature(HttpMethod httpMethod, Dictionary<string, string> parameters, string completeUri)
         {
             string str1 = SafeUpperCaseUrlEncode(completeUri);
             string str2 = string.Join("%26", NormalizeParameters(parameters).OrderBy((x => x.Key)).ToList().ConvertAll((x => x.Key + "%3D" + x.Value)));
@@ -266,5 +266,5 @@ namespace WooCommerceTrackingTester
 
 
 
-   
+
 }
