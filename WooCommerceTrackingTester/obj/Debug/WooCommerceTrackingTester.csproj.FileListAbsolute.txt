@@ -11,3 +11,14 @@ C:\Users\Adrian\Documents\Visual Studio 2015\Projects\WooCommerceTrackingTester\
 C:\Users\Adrian\Source\Repos\Woo-Commerce-Tracking-Upload-C-\WooCommerceTrackingTester\bin\Debug\WooCommerceTrackingTester.exe.config
 C:\Users\Adrian\Source\Repos\Woo-Commerce-Tracking-Upload-C-\WooCommerceTrackingTester\obj\Debug\WooCommerceTrackingTester.exe
 C:\Users\Adrian\Source\Repos\Woo-Commerce-Tracking-Upload-C-\WooCommerceTrackingTester\obj\Debug\WooCommerceTrackingTester.pdb
+C:\Users\Adrian\Source\Repos\Woo-Commerce-Tracking-Upload-C-\WooCommerceTrackingTester\bin\Debug\WooCommerceTrackingTester.exe
+C:\Users\Adrian\Source\Repos\Woo-Commerce-Tracking-Upload-C-\WooCommerceTrackingTester\bin\Debug\WooCommerceTrackingTester.pdb
+C:\Users\Adrian\Source\Repos\Woo-Commerce-Tracking-Upload-C-\WooCommerceTrackingTester\bin\Debug\EntityFramework.dll
+C:\Users\Adrian\Source\Repos\Woo-Commerce-Tracking-Upload-C-\WooCommerceTrackingTester\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Adrian\Source\Repos\Woo-Commerce-Tracking-Upload-C-\WooCommerceTrackingTester\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Adrian\Source\Repos\Woo-Commerce-Tracking-Upload-C-\WooCommerceTrackingTester\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Adrian\Source\Repos\Woo-Commerce-Tracking-Upload-C-\WooCommerceTrackingTester\bin\Debug\EntityFramework.xml
+C:\Users\Adrian\Source\Repos\Woo-Commerce-Tracking-Upload-C-\WooCommerceTrackingTester\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Adrian\Source\Repos\Woo-Commerce-Tracking-Upload-C-\WooCommerceTrackingTester\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Adrian\Source\Repos\Woo-Commerce-Tracking-Upload-C-\WooCommerceTrackingTester\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Adrian\Source\Repos\Woo-Commerce-Tracking-Upload-C-\WooCommerceTrackingTester\obj\Debug\WooCommerceTrackingTester.csprojResolveAssemblyReference.cache

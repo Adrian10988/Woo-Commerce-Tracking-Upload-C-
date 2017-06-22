@@ -1,0 +1,1746 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ShipBobLiveModelStoreContainer" CdmEntityContainer="ShipBobLiveEntities">
+    <EntitySetMapping Name="C__RefactorLog">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.C__RefactorLog">
+        <MappingFragment StoreEntitySet="__RefactorLog">
+          <ScalarProperty Name="OperationKey" ColumnName="OperationKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AccountLevels">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.AccountLevel">
+        <MappingFragment StoreEntitySet="AccountLevels">
+          <ScalarProperty Name="LevelID" ColumnName="LevelID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Analytics">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.Analytic">
+        <MappingFragment StoreEntitySet="Analytics">
+          <ScalarProperty Name="AnalyticsID" ColumnName="AnalyticsID" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="TimePeriodEnum" ColumnName="TimePeriodEnum" />
+          <ScalarProperty Name="TimePeriodInDays" ColumnName="TimePeriodInDays" />
+          <ScalarProperty Name="VelocityChange" ColumnName="VelocityChange" />
+          <ScalarProperty Name="StockOutDays" ColumnName="StockOutDays" />
+          <ScalarProperty Name="PerformanceDirectionEnum" ColumnName="PerformanceDirectionEnum" />
+          <ScalarProperty Name="TotalSales" ColumnName="TotalSales" />
+          <ScalarProperty Name="FirstPeriodSales" ColumnName="FirstPeriodSales" />
+          <ScalarProperty Name="FirstPeriodStartDate" ColumnName="FirstPeriodStartDate" />
+          <ScalarProperty Name="FirstPeriodEndDate" ColumnName="FirstPeriodEndDate" />
+          <ScalarProperty Name="SecondPeriodSales" ColumnName="SecondPeriodSales" />
+          <ScalarProperty Name="SecondPeriodStartDate" ColumnName="SecondPeriodStartDate" />
+          <ScalarProperty Name="SecondPeriodEndDate" ColumnName="SecondPeriodEndDate" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="QtyOnHand" ColumnName="QtyOnHand" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BatchShipments">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.BatchShipment">
+        <MappingFragment StoreEntitySet="BatchShipment">
+          <ScalarProperty Name="BatchShipmentId" ColumnName="BatchShipmentId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="SourceBatchId" ColumnName="SourceBatchId" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="ShipmentsCount" ColumnName="ShipmentsCount" />
+          <ScalarProperty Name="ShippingRateSource" ColumnName="ShippingRateSource" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="WeightOunces" ColumnName="WeightOunces" />
+          <ScalarProperty Name="ReduceInventory" ColumnName="ReduceInventory" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="UpdatedAt" ColumnName="UpdatedAt" />
+          <ScalarProperty Name="CompletedAt" ColumnName="CompletedAt" />
+          <ScalarProperty Name="Downloaded" ColumnName="Downloaded" />
+          <ScalarProperty Name="Printed" ColumnName="Printed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Carriers">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.Carrier">
+        <MappingFragment StoreEntitySet="Carriers">
+          <ScalarProperty Name="CarrierId" ColumnName="CarrierId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.City">
+        <MappingFragment StoreEntitySet="City">
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CityISO" ColumnName="CityISO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientCustomerNotes">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.ClientCustomerNote">
+        <MappingFragment StoreEntitySet="ClientCustomerNotes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Html" ColumnName="Html" />
+          <ScalarProperty Name="PlainText" ColumnName="PlainText" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="ClientCustomerId" ColumnName="ClientCustomerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientCustomers">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.ClientCustomer">
+        <MappingFragment StoreEntitySet="ClientCustomers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StreetAddress1" ColumnName="StreetAddress1" />
+          <ScalarProperty Name="StreetAddress2" ColumnName="StreetAddress2" />
+          <ScalarProperty Name="HouseNumber" ColumnName="HouseNumber" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CloseIOLeads">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.CloseIOLead">
+        <MappingFragment StoreEntitySet="CloseIOLead">
+          <ScalarProperty Name="CloseIOLeadId" ColumnName="CloseIOLeadId" />
+          <ScalarProperty Name="LeadStatus" ColumnName="LeadStatus" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="LeadId" ColumnName="LeadId" />
+          <ScalarProperty Name="AccountManager" ColumnName="AccountManager" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="CloseIOLastUpdate" ColumnName="CloseIOLastUpdate" />
+          <ScalarProperty Name="OpportunityStatusLabel" ColumnName="OpportunityStatusLabel" />
+          <ScalarProperty Name="CloseDate" ColumnName="CloseDate" />
+          <ScalarProperty Name="ValueOpportunity" ColumnName="ValueOpportunity" />
+          <ScalarProperty Name="IsOpportunityActive" ColumnName="IsOpportunityActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CloseOpportunities">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.CloseOpportunity">
+        <MappingFragment StoreEntitySet="CloseOpportunity">
+          <ScalarProperty Name="CloseOpportunityId" ColumnName="CloseOpportunityId" />
+          <ScalarProperty Name="OpportunityStatus" ColumnName="OpportunityStatus" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="LeadId" ColumnName="LeadId" />
+          <ScalarProperty Name="AccountManager" ColumnName="AccountManager" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="CloseDate" ColumnName="CloseDate" />
+          <ScalarProperty Name="ValueOpportunity" ColumnName="ValueOpportunity" />
+          <ScalarProperty Name="Confidence" ColumnName="Confidence" />
+          <ScalarProperty Name="OpportunitySize" ColumnName="OpportunitySize" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Industry" ColumnName="Industry" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Containers">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.Container">
+        <MappingFragment StoreEntitySet="Containers">
+          <ScalarProperty Name="ContainerId" ColumnName="ContainerId" />
+          <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="FulFillmentCenterId" ColumnName="FulFillmentCenterId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CountryCodeZones">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.CountryCodeZone">
+        <MappingFragment StoreEntitySet="CountryCodeZone">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="ISONumeric" ColumnName="ISONumeric" />
+          <ScalarProperty Name="ISO2" ColumnName="ISO2" />
+          <ScalarProperty Name="ISO3" ColumnName="ISO3" />
+          <ScalarProperty Name="InternationalZone" ColumnName="InternationalZone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerPreferenceTables">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.CustomerPreferenceTable">
+        <MappingFragment StoreEntitySet="CustomerPreferenceTable">
+          <ScalarProperty Name="CustomerPreferenceTableId" ColumnName="CustomerPreferenceTableId" />
+          <ScalarProperty Name="CustomerPreferenceTypeId" ColumnName="CustomerPreferenceTypeId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="OrderTypeId" ColumnName="OrderTypeId" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerPreferenceTypes">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.CustomerPreferenceType">
+        <MappingFragment StoreEntitySet="CustomerPreferenceType">
+          <ScalarProperty Name="CustomerPreferenceTypeId" ColumnName="CustomerPreferenceTypeId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="CustomerPreferenceTypeEnum" ColumnName="CustomerPreferenceTypeEnum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Elements">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.Element">
+        <MappingFragment StoreEntitySet="Elements">
+          <ScalarProperty Name="ElementId" ColumnName="ElementId" />
+          <ScalarProperty Name="ElementName" ColumnName="ElementName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeeTimeTrackings">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.EmployeeTimeTracking">
+        <MappingFragment StoreEntitySet="EmployeeTimeTracking">
+          <ScalarProperty Name="EmployeeTimeTrackingId" ColumnName="EmployeeTimeTrackingId" />
+          <ScalarProperty Name="ClockIn" ColumnName="ClockIn" />
+          <ScalarProperty Name="ClockOut" ColumnName="ClockOut" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EntityTypes">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.EntityType">
+        <MappingFragment StoreEntitySet="EntityType">
+          <ScalarProperty Name="EntityTypeId" ColumnName="EntityTypeId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EventLogs">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.EventLog">
+        <MappingFragment StoreEntitySet="EventLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="LevelEnumType" ColumnName="LevelEnumType" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EventLogClassSourceId" ColumnName="EventLogClassSourceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EventLogClassSources">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.EventLogClassSource">
+        <MappingFragment StoreEntitySet="EventLogClassSource">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ClassSource" ColumnName="ClassSource" />
+          <ScalarProperty Name="LogInfo" ColumnName="LogInfo" />
+          <ScalarProperty Name="LogWarn" ColumnName="LogWarn" />
+          <ScalarProperty Name="LogError" ColumnName="LogError" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FulfillmentCenters">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.FulfillmentCenter">
+        <MappingFragment StoreEntitySet="FulfillmentCenters">
+          <ScalarProperty Name="FulfillmentCenterId" ColumnName="FulfillmentCenterId" />
+          <ScalarProperty Name="CenterName" ColumnName="CenterName" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="StreetAddress1" ColumnName="StreetAddress1" />
+          <ScalarProperty Name="StreetAddress2" ColumnName="StreetAddress2" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="ShippoAddressId" ColumnName="ShippoAddressId" />
+          <ScalarProperty Name="EasyPostAddressId" ColumnName="EasyPostAddressId" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="ShippoRetailAddressId" ColumnName="ShippoRetailAddressId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inventories">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.Inventory">
+        <MappingFragment StoreEntitySet="Inventory">
+          <ScalarProperty Name="InventoryId" ColumnName="InventoryId" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+          <ScalarProperty Name="OverrideInventoryCheck" ColumnName="OverrideInventoryCheck" />
+          <ScalarProperty Name="BenchmarkQuantity" ColumnName="BenchmarkQuantity" />
+          <ScalarProperty Name="HideDisplay" ColumnName="HideDisplay" />
+          <ScalarProperty Name="SortPriority" ColumnName="SortPriority" />
+          <ScalarProperty Name="IsMerged" ColumnName="IsMerged" />
+          <ScalarProperty Name="EventMask" ColumnName="EventMask" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="WeightOunces" ColumnName="WeightOunces" />
+          <ScalarProperty Name="InventoryProperties" ColumnName="InventoryProperties" />
+          <ScalarProperty Name="HsTarrifCode" ColumnName="HsTarrifCode" />
+          <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+          <ScalarProperty Name="ItemValueInUsd" ColumnName="ItemValueInUsd" />
+          <ScalarProperty Name="Sku" ColumnName="Sku" />
+          <ScalarProperty Name="IsSet" ColumnName="IsSet" />
+          <ScalarProperty Name="PlatformSource" ColumnName="PlatformSource" />
+          <ScalarProperty Name="MergedToInventoryId" ColumnName="MergedToInventoryId" />
+          <ScalarProperty Name="AmazonSku" ColumnName="AmazonSku" />
+          <ScalarProperty Name="AmazonASIN" ColumnName="AmazonASIN" />
+          <ScalarProperty Name="StoreUPC" ColumnName="StoreUPC" />
+          <ScalarProperty Name="ShopifySku" ColumnName="ShopifySku" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventoryBinChargeTypes">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.InventoryBinChargeType">
+        <MappingFragment StoreEntitySet="InventoryBinChargeType">
+          <ScalarProperty Name="InventoryBinChargeTypeId" ColumnName="InventoryBinChargeTypeId" />
+          <ScalarProperty Name="ChargeType" ColumnName="ChargeType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventoryBundleDefinitions">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.InventoryBundleDefinition">
+        <MappingFragment StoreEntitySet="InventoryBundleDefinition">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BundleRootInventoryId" ColumnName="BundleRootInventoryId" />
+          <ScalarProperty Name="InventoryId" ColumnName="InventoryId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventoryLogs">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.InventoryLog">
+        <MappingFragment StoreEntitySet="InventoryLog">
+          <ScalarProperty Name="LogId" ColumnName="LogId" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="InventoryId" ColumnName="InventoryId" />
+          <ScalarProperty Name="InventoryEventType" ColumnName="InventoryEventType" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ShelfId" ColumnName="ShelfId" />
+          <ScalarProperty Name="ReducedBy" ColumnName="ReducedBy" />
+          <ScalarProperty Name="IncreasedBy" ColumnName="IncreasedBy" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="OverallQuantity" ColumnName="OverallQuantity" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventoryShelveMappings">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.InventoryShelveMapping">
+        <MappingFragment StoreEntitySet="InventoryShelveMapping">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="InventoryId" ColumnName="InventoryId" />
+          <ScalarProperty Name="ShelfId" ColumnName="ShelfId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="BookedQuantity" ColumnName="BookedQuantity" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="IsReduced" ColumnName="IsReduced" />
+          <ScalarProperty Name="PickingStatus" ColumnName="PickingStatus" />
+          <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+          <ScalarProperty Name="InternalReorderPoint" ColumnName="InternalReorderPoint" />
+          <ScalarProperty Name="BenchmarkQuantity" ColumnName="BenchmarkQuantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventoryTransferRequests">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.InventoryTransferRequest">
+        <MappingFragment StoreEntitySet="InventoryTransferRequest">
+          <ScalarProperty Name="RequestId" ColumnName="RequestId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="CustomerNotes" ColumnName="CustomerNotes" />
+          <ScalarProperty Name="RequestStatus" ColumnName="RequestStatus" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedTimestamp" ColumnName="CreatedTimestamp" />
+          <ScalarProperty Name="LastUpdatedTimestamp" ColumnName="LastUpdatedTimestamp" />
+          <ScalarProperty Name="LastUpdatedBy" ColumnName="LastUpdatedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventoryTransferRequestDatas">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.InventoryTransferRequestData">
+        <MappingFragment StoreEntitySet="InventoryTransferRequestData">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RequestId" ColumnName="RequestId" />
+          <ScalarProperty Name="InventoryId" ColumnName="InventoryId" />
+          <ScalarProperty Name="FromShelfId" ColumnName="FromShelfId" />
+          <ScalarProperty Name="ToShelfId" ColumnName="ToShelfId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventoryTransferRequestStatus">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.InventoryTransferRequestStatu">
+        <MappingFragment StoreEntitySet="InventoryTransferRequestStatus">
+          <ScalarProperty Name="InventoryTransferRequestStatusId" ColumnName="InventoryTransferRequestStatusId" />
+          <ScalarProperty Name="InventoryTransferRequestStatus" ColumnName="InventoryTransferRequestStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LabelGenerationLogs">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.LabelGenerationLog">
+        <MappingFragment StoreEntitySet="LabelGenerationLog">
+          <ScalarProperty Name="LabelGenerationLogId" ColumnName="LabelGenerationLogId" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LocalDeliveryZoneRateMappings">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.LocalDeliveryZoneRateMapping">
+        <MappingFragment StoreEntitySet="LocalDeliveryZoneRateMapping">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ServiceRateId" ColumnName="ServiceRateId" />
+          <ScalarProperty Name="FullFillmentCenterId" ColumnName="FullFillmentCenterId" />
+          <ScalarProperty Name="DestinationZipCodes" ColumnName="DestinationZipCodes" />
+          <ScalarProperty Name="CarrierRate" ColumnName="CarrierRate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logs">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.Log">
+        <MappingFragment StoreEntitySet="Log">
+          <ScalarProperty Name="LogID" ColumnName="LogID" />
+          <ScalarProperty Name="LogTypeID" ColumnName="LogTypeID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="P1" ColumnName="P1" />
+          <ScalarProperty Name="P2" ColumnName="P2" />
+          <ScalarProperty Name="P3" ColumnName="P3" />
+          <ScalarProperty Name="P4" ColumnName="P4" />
+          <ScalarProperty Name="P5" ColumnName="P5" />
+          <ScalarProperty Name="P6" ColumnName="P6" />
+          <ScalarProperty Name="P7" ColumnName="P7" />
+          <ScalarProperty Name="P8" ColumnName="P8" />
+          <ScalarProperty Name="P9" ColumnName="P9" />
+          <ScalarProperty Name="DateUpdated" ColumnName="DateUpdated" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LogTypeTexts">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.LogTypeText">
+        <MappingFragment StoreEntitySet="LogTypeTexts">
+          <ScalarProperty Name="LogTypeID" ColumnName="LogTypeID" />
+          <ScalarProperty Name="LogTypeName" ColumnName="LogTypeName" />
+          <ScalarProperty Name="LogText" ColumnName="LogText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MantoxTeaInventoryAuditDatas">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.MantoxTeaInventoryAuditData">
+        <MappingFragment StoreEntitySet="MantoxTeaInventoryAuditData">
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="MantoxTeaInventoryId" ColumnName="MantoxTeaInventoryId" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="StartQuantity" ColumnName="StartQuantity" />
+          <ScalarProperty Name="EndQuantity" ColumnName="EndQuantity" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="BinNumber" ColumnName="BinNumber" />
+          <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Notifications">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.Notification">
+        <MappingFragment StoreEntitySet="Notification">
+          <ScalarProperty Name="NotificationId" ColumnName="NotificationId" />
+          <ScalarProperty Name="NotificationType" ColumnName="NotificationType" />
+          <ScalarProperty Name="NotificationActionType" ColumnName="NotificationActionType" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="UserContactId" ColumnName="UserContactId" />
+          <ScalarProperty Name="ShipOptionsId" ColumnName="ShipOptionsId" />
+          <ScalarProperty Name="TrackingId" ColumnName="TrackingId" />
+          <ScalarProperty Name="Invoice" ColumnName="Invoice" />
+          <ScalarProperty Name="Carrier" ColumnName="Carrier" />
+          <ScalarProperty Name="EasyPostShipId" ColumnName="EasyPostShipId" />
+          <ScalarProperty Name="EasyPostLabelUrl" ColumnName="EasyPostLabelUrl" />
+          <ScalarProperty Name="ServiceFee" ColumnName="ServiceFee" />
+          <ScalarProperty Name="StoreReferenceId" ColumnName="StoreReferenceId" />
+          <ScalarProperty Name="ExtraInformation" ColumnName="ExtraInformation" />
+          <ScalarProperty Name="InsuranceAmount" ColumnName="InsuranceAmount" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="OrderShipStatusId" ColumnName="OrderShipStatusId" />
+          <ScalarProperty Name="OrderTypeId" ColumnName="OrderTypeId" />
+          <ScalarProperty Name="IsInvoiced" ColumnName="IsInvoiced" />
+          <ScalarProperty Name="IsTrackingUploaded" ColumnName="IsTrackingUploaded" />
+          <ScalarProperty Name="FinalInvoice" ColumnName="FinalInvoice" />
+          <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+          <ScalarProperty Name="LastUpdateBy" ColumnName="LastUpdateBy" />
+          <ScalarProperty Name="IsShipOptionProcessed" ColumnName="IsShipOptionProcessed" />
+          <ScalarProperty Name="WarehouseReceivingRequestId" ColumnName="WarehouseReceivingRequestId" />
+          <ScalarProperty Name="StoreIntegrationId" ColumnName="StoreIntegrationId" />
+          <ScalarProperty Name="FulfillmentCenterId" ColumnName="FulfillmentCenterId" />
+          <ScalarProperty Name="InstructionMask" ColumnName="InstructionMask" />
+          <ScalarProperty Name="InvoiceOption" ColumnName="InvoiceOption" />
+          <ScalarProperty Name="PickupStatusId" ColumnName="PickupStatusId" />
+          <ScalarProperty Name="BatchShipmentId" ColumnName="BatchShipmentId" />
+          <ScalarProperty Name="PlanPricingId" ColumnName="PlanPricingId" />
+          <ScalarProperty Name="IsPlanPricingIdUsed" ColumnName="IsPlanPricingIdUsed" />
+          <ScalarProperty Name="RetailRateValue" ColumnName="RetailRateValue" />
+          <ScalarProperty Name="CarrierService" ColumnName="CarrierService" />
+          <ScalarProperty Name="ChosenShipOptionsId" ColumnName="ChosenShipOptionsId" />
+          <ScalarProperty Name="ShipbobZoneUsed" ColumnName="ShipbobZoneUsed" />
+          <ScalarProperty Name="APIBuyPostageTransactionId" ColumnName="APIBuyPostageTransactionId" />
+          <ScalarProperty Name="PricingModelUsed" ColumnName="PricingModelUsed" />
+          <ScalarProperty Name="UserPricingTableID" ColumnName="UserPricingTableID" />
+          <ScalarProperty Name="PricingShipOptionUsed" ColumnName="PricingShipOptionUsed" />
+          <ScalarProperty Name="PricingMessages" ColumnName="PricingMessages" />
+          <ScalarProperty Name="ReturnId" ColumnName="ReturnId" />
+          <ScalarProperty Name="IsBatch" ColumnName="IsBatch" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderAttachments">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.OrderAttachment">
+        <MappingFragment StoreEntitySet="OrderAttachments">
+          <ScalarProperty Name="AttachmentID" ColumnName="AttachmentID" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="AttachmentPath" ColumnName="AttachmentPath" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="AttachmentTypeId" ColumnName="AttachmentTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderBatches">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.OrderBatch">
+        <MappingFragment StoreEntitySet="OrderBatch">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="Unique" ColumnName="Unique" />
+          <ScalarProperty Name="LowestAPIRateId" ColumnName="LowestAPIRateId" />
+          <ScalarProperty Name="LowestRateSource" ColumnName="LowestRateSource" />
+          <ScalarProperty Name="Carrier" ColumnName="Carrier" />
+          <ScalarProperty Name="LowestAPIRate" ColumnName="LowestAPIRate" />
+          <ScalarProperty Name="ManipulatedBaseRate" ColumnName="ManipulatedBaseRate" />
+          <ScalarProperty Name="LowestRetailRateId" ColumnName="LowestRetailRateId" />
+          <ScalarProperty Name="FulfillmentLocationZip" ColumnName="FulfillmentLocationZip" />
+          <ScalarProperty Name="DestinationCountry" ColumnName="DestinationCountry" />
+          <ScalarProperty Name="ManipulatedBaseRateId" ColumnName="ManipulatedBaseRateId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="InsuranceAmount" ColumnName="InsuranceAmount" />
+          <ScalarProperty Name="RetailRateValue" ColumnName="RetailRateValue" />
+          <ScalarProperty Name="CarrierService" ColumnName="CarrierService" />
+          <ScalarProperty Name="ChosenShipOptionsId" ColumnName="ChosenShipOptionsId" />
+          <ScalarProperty Name="EasyPostShipId" ColumnName="EasyPostShipId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderCreditCardInfoes">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.OrderCreditCardInfo">
+        <MappingFragment StoreEntitySet="OrderCreditCardInfo">
+          <ScalarProperty Name="CreditCardInfoID" ColumnName="CreditCardInfoID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="StripeCustomerId" ColumnName="StripeCustomerId" />
+          <ScalarProperty Name="LastFour" ColumnName="LastFour" />
+          <ScalarProperty Name="CardExpiryMonth" ColumnName="CardExpiryMonth" />
+          <ScalarProperty Name="CardExpiryYear" ColumnName="CardExpiryYear" />
+          <ScalarProperty Name="CardType" ColumnName="CardType" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderDimensions">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.OrderDimension">
+        <MappingFragment StoreEntitySet="OrderDimensions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="PreDefinedPackage" ColumnName="PreDefinedPackage" />
+          <ScalarProperty Name="WeightOunces" ColumnName="WeightOunces" />
+          <ScalarProperty Name="PackageMaterialId" ColumnName="PackageMaterialId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderInformations">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.OrderInformation">
+        <MappingFragment StoreEntitySet="OrderInformation">
+          <ScalarProperty Name="IsClientAcknowledged" ColumnName="IsClientAcknowledged" />
+          <ScalarProperty Name="IsShipbobAcknowledged" ColumnName="IsShipbobAcknowledged" />
+          <ScalarProperty Name="AcknowledgedBy" ColumnName="AcknowledgedBy" />
+          <ScalarProperty Name="AcknowledgedTimestamp" ColumnName="AcknowledgedTimestamp" />
+          <ScalarProperty Name="PackagedBy" ColumnName="PackagedBy" />
+          <ScalarProperty Name="PackagedTimestamp" ColumnName="PackagedTimestamp" />
+          <ScalarProperty Name="IsPrinted" ColumnName="IsPrinted" />
+          <ScalarProperty Name="PrintedTimestamp" ColumnName="PrintedTimestamp" />
+          <ScalarProperty Name="StoreTrackingRequestId" ColumnName="StoreTrackingRequestId" />
+          <ScalarProperty Name="StoreTrackingRequestTimestamp" ColumnName="StoreTrackingRequestTimestamp" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="StoreOrderData" ColumnName="StoreOrderData" />
+          <ScalarProperty Name="TrackingUploadTimestamp" ColumnName="TrackingUploadTimestamp" />
+          <ScalarProperty Name="TotalOrderAmount" ColumnName="TotalOrderAmount" />
+          <ScalarProperty Name="ClientAcknowledgedTimestamp" ColumnName="ClientAcknowledgedTimestamp" />
+          <ScalarProperty Name="PickerAssignedTimestamp" ColumnName="PickerAssignedTimestamp" />
+          <ScalarProperty Name="PrintedCount" ColumnName="PrintedCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderMantoxTeaInventories">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.OrderMantoxTeaInventory">
+        <MappingFragment StoreEntitySet="OrderMantoxTeaInventory">
+          <ScalarProperty Name="OrderMantoxTeaInventoryId" ColumnName="OrderMantoxTeaInventoryId" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="MantoxTeaInventoryId" ColumnName="MantoxTeaInventoryId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ShelfId" ColumnName="ShelfId" />
+          <ScalarProperty Name="OriginatingInventoryId" ColumnName="OriginatingInventoryId" />
+          <ScalarProperty Name="OriginatingQuantity" ColumnName="OriginatingQuantity" />
+          <ScalarProperty Name="AdditionalItemInformation" ColumnName="AdditionalItemInformation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderMantoxTeaScanItems">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.OrderMantoxTeaScanItem">
+        <MappingFragment StoreEntitySet="OrderMantoxTeaScanItem">
+          <ScalarProperty Name="OrderMantoxTeaScanItemId" ColumnName="OrderMantoxTeaScanItemId" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="MantoxTeaInventoryId" ColumnName="MantoxTeaInventoryId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="IsSynced" ColumnName="IsSynced" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderPickers">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.OrderPicker">
+        <MappingFragment StoreEntitySet="OrderPicker">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="PickerId" ColumnName="PickerId" />
+          <ScalarProperty Name="ContainerId" ColumnName="ContainerId" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="PickerStatusId" ColumnName="PickerStatusId" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderPickUpRequestMappings">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.OrderPickUpRequestMapping">
+        <MappingFragment StoreEntitySet="OrderPickUpRequestMappings">
+          <ScalarProperty Name="OrderPickUpRequestMappingId" ColumnName="OrderPickUpRequestMappingId" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="UserPickUpRequestId" ColumnName="UserPickUpRequestId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderProperties">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.OrderProperty">
+        <MappingFragment StoreEntitySet="OrderProperties">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="ApiFromAddressId" ColumnName="ApiFromAddressId" />
+          <ScalarProperty Name="ScanFormUrl" ColumnName="ScanFormUrl" />
+          <ScalarProperty Name="ApiCarrierAcctId" ColumnName="ApiCarrierAcctId" />
+          <ScalarProperty Name="ApiToAddressId" ColumnName="ApiToAddressId" />
+          <ScalarProperty Name="ScanFormResult" ColumnName="ScanFormResult" />
+          <ScalarProperty Name="ScanFormReqDateTime" ColumnName="ScanFormReqDateTime" />
+          <ScalarProperty Name="ApiLabelCreateDateTime" ColumnName="ApiLabelCreateDateTime" />
+          <ScalarProperty Name="APIChosenRateId" ColumnName="APIChosenRateId" />
+          <ScalarProperty Name="APIBuyPostageTransactionId" ColumnName="APIBuyPostageTransactionId" />
+          <ScalarProperty Name="APIRateSource" ColumnName="APIRateSource" />
+          <ScalarProperty Name="Carrier" ColumnName="Carrier" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderReprocessingQueues">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.OrderReprocessingQueue">
+        <MappingFragment StoreEntitySet="OrderReprocessingQueue">
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="RequestId" ColumnName="RequestId" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="LastProcessedTimeStamp" ColumnName="LastProcessedTimeStamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderReprocessingQueueStates">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.OrderReprocessingQueueState">
+        <MappingFragment StoreEntitySet="OrderReprocessingQueueStates">
+          <ScalarProperty Name="OrderReprocessingQueueStateId" ColumnName="OrderReprocessingQueueStateId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderShipStatus">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.OrderShipStatu">
+        <MappingFragment StoreEntitySet="OrderShipStatus">
+          <ScalarProperty Name="OrderShipStatusId" ColumnName="OrderShipStatusId" />
+          <ScalarProperty Name="ShipStatus" ColumnName="ShipStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderTrackings">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.OrderTracking">
+        <MappingFragment StoreEntitySet="OrderTracking">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="PreTransit" ColumnName="PreTransit" />
+          <ScalarProperty Name="InTransit" ColumnName="InTransit" />
+          <ScalarProperty Name="OutForDelivery" ColumnName="OutForDelivery" />
+          <ScalarProperty Name="Delivered" ColumnName="Delivered" />
+          <ScalarProperty Name="CatchAll" ColumnName="CatchAll" />
+          <ScalarProperty Name="LastMessage" ColumnName="LastMessage" />
+          <ScalarProperty Name="LastLocation" ColumnName="LastLocation" />
+          <ScalarProperty Name="EstimatedDelivery" ColumnName="EstimatedDelivery" />
+          <ScalarProperty Name="SignedBy" ColumnName="SignedBy" />
+          <ScalarProperty Name="Subscribed" ColumnName="Subscribed" />
+          <ScalarProperty Name="Emails" ColumnName="Emails" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderTypes">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.OrderType">
+        <MappingFragment StoreEntitySet="OrderType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OrderTypeId" ColumnName="OrderTypeId" />
+          <ScalarProperty Name="OrderType1" ColumnName="OrderType" />
+          <ScalarProperty Name="IsOnFleetEnabled" ColumnName="IsOnFleetEnabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderZenDesks">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.OrderZenDesk">
+        <MappingFragment StoreEntitySet="OrderZenDesk">
+          <ScalarProperty Name="OrderZenDeskId" ColumnName="OrderZenDeskId" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="TicketId" ColumnName="TicketId" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="UpdateDateTime" ColumnName="UpdateDateTime" />
+          <ScalarProperty Name="SolveDateTime" ColumnName="SolveDateTime" />
+          <ScalarProperty Name="WhoMessedUp" ColumnName="WhoMessedUp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PackageMaterialDimensions">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.PackageMaterialDimension">
+        <MappingFragment StoreEntitySet="PackageMaterialDimensions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="WeightOunces" ColumnName="WeightOunces" />
+          <ScalarProperty Name="ItemCost" ColumnName="ItemCost" />
+          <ScalarProperty Name="Sku" ColumnName="Sku" />
+          <ScalarProperty Name="QtyOnHand" ColumnName="QtyOnHand" />
+          <ScalarProperty Name="PlanPricingDimensionsId" ColumnName="PlanPricingDimensionsId" />
+          <ScalarProperty Name="PackageMaterialTypeId" ColumnName="PackageMaterialTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PackageMaterialTypes">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.PackageMaterialType">
+        <MappingFragment StoreEntitySet="PackageMaterialType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PackageTypes">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.PackageType">
+        <MappingFragment StoreEntitySet="PackageType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PickerStatus">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.PickerStatu">
+        <MappingFragment StoreEntitySet="PickerStatus">
+          <ScalarProperty Name="PickerStatusId" ColumnName="PickerStatusId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PickUpStatus">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.PickUpStatu">
+        <MappingFragment StoreEntitySet="PickUpStatus">
+          <ScalarProperty Name="PickUpStatusId" ColumnName="PickUpStatusId" />
+          <ScalarProperty Name="PickUpStatus" ColumnName="PickUpStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Plans">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.Plan">
+        <MappingFragment StoreEntitySet="Plan">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FromVolume" ColumnName="FromVolume" />
+          <ScalarProperty Name="ToVolume" ColumnName="ToVolume" />
+          <ScalarProperty Name="IsCustomPlan" ColumnName="IsCustomPlan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlanPricings">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.PlanPricing">
+        <MappingFragment StoreEntitySet="PlanPricing">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ShipbobZone" ColumnName="ShipbobZone" />
+          <ScalarProperty Name="OriginFullFillmentCenterId" ColumnName="OriginFullFillmentCenterId" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="LengthTolerance" ColumnName="LengthTolerance" />
+          <ScalarProperty Name="WidthTolerance" ColumnName="WidthTolerance" />
+          <ScalarProperty Name="HeightTolerance" ColumnName="HeightTolerance" />
+          <ScalarProperty Name="WeightOuncesStart" ColumnName="WeightOuncesStart" />
+          <ScalarProperty Name="WeightOuncesEnd" ColumnName="WeightOuncesEnd" />
+          <ScalarProperty Name="FlatRate" ColumnName="FlatRate" />
+          <ScalarProperty Name="ShipOptionId" ColumnName="ShipOptionId" />
+          <ScalarProperty Name="PlanId" ColumnName="PlanId" />
+          <ScalarProperty Name="PlanPricingDimensionsId" ColumnName="PlanPricingDimensionsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlanPricingDimensions">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.PlanPricingDimension">
+        <MappingFragment StoreEntitySet="PlanPricingDimensions">
+          <ScalarProperty Name="PlanPricingDimensionsId" ColumnName="PlanPricingDimensionsId" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlatformSources">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.PlatformSource">
+        <MappingFragment StoreEntitySet="PlatformSources">
+          <ScalarProperty Name="PlatformSourceId" ColumnName="PlatformSourceId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PricingModels">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.PricingModel">
+        <MappingFragment StoreEntitySet="PricingModel">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="USPSZone" ColumnName="USPSZone" />
+          <ScalarProperty Name="UPSZone" ColumnName="UPSZone" />
+          <ScalarProperty Name="OriginFullFillmentCenterId" ColumnName="OriginFullFillmentCenterId" />
+          <ScalarProperty Name="DestAddressStreet1" ColumnName="DestAddressStreet1" />
+          <ScalarProperty Name="DestAddressName" ColumnName="DestAddressName" />
+          <ScalarProperty Name="DestAddressStreet2" ColumnName="DestAddressStreet2" />
+          <ScalarProperty Name="DestAddressCity" ColumnName="DestAddressCity" />
+          <ScalarProperty Name="DestAddressState" ColumnName="DestAddressState" />
+          <ScalarProperty Name="DestAddressCountry" ColumnName="DestAddressCountry" />
+          <ScalarProperty Name="DestAddressPostalCode" ColumnName="DestAddressPostalCode" />
+          <ScalarProperty Name="DestAddressPhone" ColumnName="DestAddressPhone" />
+          <ScalarProperty Name="Carrier" ColumnName="Carrier" />
+          <ScalarProperty Name="Service" ColumnName="Service" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="WeightLb" ColumnName="WeightLb" />
+          <ScalarProperty Name="WeightOunces" ColumnName="WeightOunces" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="ShipOptionId" ColumnName="ShipOptionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PricingZoneDomestics">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.PricingZoneDomestic">
+        <MappingFragment StoreEntitySet="PricingZoneDomestic">
+          <ScalarProperty Name="PricingZoneDomesticId" ColumnName="PricingZoneDomesticId" />
+          <ScalarProperty Name="OriginZipCode" ColumnName="OriginZipCode" />
+          <ScalarProperty Name="StartRange" ColumnName="StartRange" />
+          <ScalarProperty Name="EndRange" ColumnName="EndRange" />
+          <ScalarProperty Name="Zone" ColumnName="Zone" />
+          <ScalarProperty Name="Carrier" ColumnName="Carrier" />
+          <ScalarProperty Name="ShipBobPricingZone" ColumnName="ShipBobPricingZone" />
+          <ScalarProperty Name="HighestUPSZone" ColumnName="HighestUPSZone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PromoCodes">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.PromoCode">
+        <MappingFragment StoreEntitySet="PromoCode">
+          <ScalarProperty Name="PromoCodeId" ColumnName="PromoCodeId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="AllowMultiple" ColumnName="AllowMultiple" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PromoCodeProperties">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.PromoCodeProperty">
+        <MappingFragment StoreEntitySet="PromoCodeProperty">
+          <ScalarProperty Name="PromoCodePropertyId" ColumnName="PromoCodePropertyId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PromoCodePropertyRelations">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.PromoCodePropertyRelation">
+        <MappingFragment StoreEntitySet="PromoCodePropertyRelation">
+          <ScalarProperty Name="PromoCodePropertyRelationId" ColumnName="PromoCodePropertyRelationId" />
+          <ScalarProperty Name="PromoCodeId" ColumnName="PromoCodeId" />
+          <ScalarProperty Name="PromoCodePropertyId" ColumnName="PromoCodePropertyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PromoCodeUsers">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.PromoCodeUser">
+        <MappingFragment StoreEntitySet="PromoCodeUser">
+          <ScalarProperty Name="PromoCodeUserId" ColumnName="PromoCodeUserId" />
+          <ScalarProperty Name="PromoCodeId" ColumnName="PromoCodeId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IsUsed" ColumnName="IsUsed" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuickBooksBills">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.QuickBooksBill">
+        <MappingFragment StoreEntitySet="QuickBooksBills">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="QuickBooksIntegrationId" ColumnName="QuickBooksIntegrationId" />
+          <ScalarProperty Name="QuickBooksBillId" ColumnName="QuickBooksBillId" />
+          <ScalarProperty Name="IsBillPaid" ColumnName="IsBillPaid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuickBooksIntegrations">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.QuickBooksIntegration">
+        <MappingFragment StoreEntitySet="QuickBooksIntegrations">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserStoreIntegrationId" ColumnName="UserStoreIntegrationId" />
+          <ScalarProperty Name="VendorId" ColumnName="VendorId" />
+          <ScalarProperty Name="PaymentAccountId" ColumnName="PaymentAccountId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReferralSources">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.ReferralSource">
+        <MappingFragment StoreEntitySet="ReferralSource">
+          <ScalarProperty Name="SourceId" ColumnName="SourceId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="BaseUrl" ColumnName="BaseUrl" />
+          <ScalarProperty Name="CompleteUrl" ColumnName="CompleteUrl" />
+          <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReturnOrders">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.ReturnOrder">
+        <MappingFragment StoreEntitySet="ReturnOrder">
+          <ScalarProperty Name="ReturnId" ColumnName="ReturnId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="SourceOrderId" ColumnName="SourceOrderId" />
+          <ScalarProperty Name="UserContactId" ColumnName="UserContactId" />
+          <ScalarProperty Name="InventoryDetails" ColumnName="InventoryDetails" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TrackingNumber" ColumnName="TrackingNumber" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+          <ScalarProperty Name="LastUpdateBy" ColumnName="LastUpdateBy" />
+          <ScalarProperty Name="ReturnOrderId" ColumnName="ReturnOrderId" />
+          <ScalarProperty Name="FulfillmentCenterId" ColumnName="FulfillmentCenterId" />
+          <ScalarProperty Name="IsCustomerCreated" ColumnName="IsCustomerCreated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReturnOrderItems">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.ReturnOrderItem">
+        <MappingFragment StoreEntitySet="ReturnOrderItems">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ReturnId" ColumnName="ReturnId" />
+          <ScalarProperty Name="InventoryId" ColumnName="InventoryId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ClientAction" ColumnName="ClientAction" />
+          <ScalarProperty Name="OtherAction" ColumnName="OtherAction" />
+          <ScalarProperty Name="ShipbobAction" ColumnName="ShipbobAction" />
+          <ScalarProperty Name="ShipbobActionDate" ColumnName="ShipbobActionDate" />
+          <ScalarProperty Name="ExchangeInventoryId" ColumnName="ExchangeInventoryId" />
+          <ScalarProperty Name="ExchangeQuantity" ColumnName="ExchangeQuantity" />
+          <ScalarProperty Name="CustomerReason" ColumnName="CustomerReason" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReturnOrderMappings">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.ReturnOrderMapping">
+        <MappingFragment StoreEntitySet="ReturnOrderMapping">
+          <ScalarProperty Name="SourceOrderId" ColumnName="SourceOrderId" />
+          <ScalarProperty Name="ReturnOrderId" ColumnName="ReturnOrderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RoleMappings">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.RoleMapping">
+        <MappingFragment StoreEntitySet="RoleMapping">
+          <ScalarProperty Name="RoleMappingId" ColumnName="RoleMappingId" />
+          <ScalarProperty Name="RoleMappingRoleId" ColumnName="RoleMappingRoleId" />
+          <ScalarProperty Name="RoleMappingElementId" ColumnName="RoleMappingElementId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RuleActions">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.RuleAction">
+        <MappingFragment StoreEntitySet="RuleActions">
+          <ScalarProperty Name="ActionId" ColumnName="ActionId" />
+          <ScalarProperty Name="RuleId" ColumnName="RuleId" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ActionType" ColumnName="ActionType" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="InventoryId" ColumnName="InventoryId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RuleConditions">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.RuleCondition">
+        <MappingFragment StoreEntitySet="RuleConditions">
+          <ScalarProperty Name="ConditionId" ColumnName="ConditionId" />
+          <ScalarProperty Name="RuleId" ColumnName="RuleId" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ConditionType" ColumnName="ConditionType" />
+          <ScalarProperty Name="ConditionLeftOperand" ColumnName="ConditionLeftOperand" />
+          <ScalarProperty Name="Operator" ColumnName="Operator" />
+          <ScalarProperty Name="ConditionRightOperand" ColumnName="ConditionRightOperand" />
+          <ScalarProperty Name="ExpressionAlias" ColumnName="ExpressionAlias" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RuleOrderPropertyToPlatformMappings">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.RuleOrderPropertyToPlatformMapping">
+        <MappingFragment StoreEntitySet="RuleOrderPropertyToPlatformMapping">
+          <ScalarProperty Name="MappingId" ColumnName="MappingId" />
+          <ScalarProperty Name="PlatformId" ColumnName="PlatformId" />
+          <ScalarProperty Name="PropertyId" ColumnName="PropertyId" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rules">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.Rule">
+        <MappingFragment StoreEntitySet="Rules">
+          <ScalarProperty Name="RuleId" ColumnName="RuleId" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="EntityType" ColumnName="EntityType" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Expression" ColumnName="Expression" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RuleSupportedOrderProperties">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.RuleSupportedOrderProperty">
+        <MappingFragment StoreEntitySet="RuleSupportedOrderProperties">
+          <ScalarProperty Name="PropertyId" ColumnName="PropertyId" />
+          <ScalarProperty Name="PropertyName" ColumnName="PropertyName" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceConfigurations">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.ServiceConfiguration">
+        <MappingFragment StoreEntitySet="ServiceConfigurations">
+          <ScalarProperty Name="ConfigId" ColumnName="ConfigId" />
+          <ScalarProperty Name="ConfigName" ColumnName="ConfigName" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="LastRunStartTime" ColumnName="LastRunStartTime" />
+          <ScalarProperty Name="LastRunEndTime" ColumnName="LastRunEndTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Shelves">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.Shelf">
+        <MappingFragment StoreEntitySet="Shelf">
+          <ScalarProperty Name="ShelfId" ColumnName="ShelfId" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="BinNumber" ColumnName="BinNumber" />
+          <ScalarProperty Name="WarehouseZoneId" ColumnName="WarehouseZoneId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShipBobAlerts">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.ShipBobAlert">
+        <MappingFragment StoreEntitySet="ShipBobAlert">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AlertName" ColumnName="AlertName" />
+          <ScalarProperty Name="AlertDescription" ColumnName="AlertDescription" />
+          <ScalarProperty Name="AlertLink" ColumnName="AlertLink" />
+          <ScalarProperty Name="AlertActive" ColumnName="AlertActive" />
+          <ScalarProperty Name="AlertInsertDate" ColumnName="AlertInsertDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShipbobAPIAccessTokens">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.ShipbobAPIAccessToken">
+        <MappingFragment StoreEntitySet="ShipbobAPIAccessToken">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="AccessToken" ColumnName="AccessToken" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShipCaptainPickUps">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.ShipCaptainPickUp">
+        <MappingFragment StoreEntitySet="ShipCaptainPickUp">
+          <ScalarProperty Name="ShipCaptainPickUpId" ColumnName="ShipCaptainPickUpId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PackageCount" ColumnName="PackageCount" />
+          <ScalarProperty Name="IsCurrent" ColumnName="IsCurrent" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+          <ScalarProperty Name="IsComplete" ColumnName="IsComplete" />
+          <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+          <ScalarProperty Name="CompletionDetail" ColumnName="CompletionDetail" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShipCaptains">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.ShipCaptain">
+        <MappingFragment StoreEntitySet="ShipCaptains">
+          <ScalarProperty Name="ShipCaptainsId" ColumnName="ShipCaptainsId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Street_Address1" ColumnName="Street Address1" />
+          <ScalarProperty Name="StreetAddress2" ColumnName="StreetAddress2" />
+          <ScalarProperty Name="HouseNumber" ColumnName="HouseNumber" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="IsBackgroundVerified" ColumnName="IsBackgroundVerified" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShipOptions">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.ShipOption">
+        <MappingFragment StoreEntitySet="ShipOptions">
+          <ScalarProperty Name="ShipOptionsId" ColumnName="ShipOptionsId" />
+          <ScalarProperty Name="CarrierId" ColumnName="CarrierId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShipOptionUserMappings">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.ShipOptionUserMapping">
+        <MappingFragment StoreEntitySet="ShipOptionUserMapping">
+          <ScalarProperty Name="MappingId" ColumnName="MappingId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ShippingMethod" ColumnName="ShippingMethod" />
+          <ScalarProperty Name="ShipOptionId" ColumnName="ShipOptionId" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShopVidaInventories">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.ShopVidaInventory">
+        <MappingFragment StoreEntitySet="ShopVidaInventory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="VariantId" ColumnName="VariantId" />
+          <ScalarProperty Name="Sku" ColumnName="Sku" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SplitInventorySupportedCountries">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.SplitInventorySupportedCountry">
+        <MappingFragment StoreEntitySet="SplitInventorySupportedCountries">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SpotCheckRequests">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.SpotCheckRequest">
+        <MappingFragment StoreEntitySet="SpotCheckRequest">
+          <ScalarProperty Name="SpotCheckRequestId" ColumnName="SpotCheckRequestId" />
+          <ScalarProperty Name="InventoryId" ColumnName="InventoryId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedTimestamp" ColumnName="CreatedTimestamp" />
+          <ScalarProperty Name="LastUpdatedBy" ColumnName="LastUpdatedBy" />
+          <ScalarProperty Name="LastUpdatedTimestamp" ColumnName="LastUpdatedTimestamp" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SpotCheckRequestItems">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.SpotCheckRequestItem">
+        <MappingFragment StoreEntitySet="SpotCheckRequestItems">
+          <ScalarProperty Name="SpotCheckItemId" ColumnName="SpotCheckItemId" />
+          <ScalarProperty Name="SpotCheckRequestId" ColumnName="SpotCheckRequestId" />
+          <ScalarProperty Name="ShelfId" ColumnName="ShelfId" />
+          <ScalarProperty Name="SpotCheckQuantity" ColumnName="SpotCheckQuantity" />
+          <ScalarProperty Name="SpotCheckDifferenceQuantity" ColumnName="SpotCheckDifferenceQuantity" />
+          <ScalarProperty Name="IsChecked" ColumnName="IsChecked" />
+          <ScalarProperty Name="IsFinished" ColumnName="IsFinished" />
+          <ScalarProperty Name="LastUpdatedBy" ColumnName="LastUpdatedBy" />
+          <ScalarProperty Name="LastUpdatedTimestamp" ColumnName="LastUpdatedTimestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SpotCheckRequestStatus">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.SpotCheckRequestStatu">
+        <MappingFragment StoreEntitySet="SpotCheckRequestStatus">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SystemSettings">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.SystemSetting">
+        <MappingFragment StoreEntitySet="SystemSettings">
+          <ScalarProperty Name="SettingId" ColumnName="SettingId" />
+          <ScalarProperty Name="SettingName" ColumnName="SettingName" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TableUpdates">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.TableUpdate">
+        <MappingFragment StoreEntitySet="TableUpdate">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TempInventoryDimensions">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.TempInventoryDimension">
+        <MappingFragment StoreEntitySet="TempInventoryDimensions">
+          <ScalarProperty Name="TempInventoryDimensionsId" ColumnName="TempInventoryDimensionsId" />
+          <ScalarProperty Name="InventoryIds" ColumnName="InventoryIds" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="WeightOunces" ColumnName="WeightOunces" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TempUserChargeTables">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.TempUserChargeTable">
+        <MappingFragment StoreEntitySet="TempUserChargeTable">
+          <ScalarProperty Name="TempUserChargeTableId" ColumnName="TempUserChargeTableId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="StripeCustomerId" ColumnName="StripeCustomerId" />
+          <ScalarProperty Name="WebOrderId" ColumnName="WebOrderId" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Threads">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.Thread">
+        <MappingFragment StoreEntitySet="Threads">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="ReferenceId" ColumnName="ReferenceId" />
+          <ScalarProperty Name="Cancel" ColumnName="Cancel" />
+          <ScalarProperty Name="ResultMessage" ColumnName="ResultMessage" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="ThreadType" ColumnName="ThreadType" />
+          <ScalarProperty Name="CurrentIncrement" ColumnName="CurrentIncrement" />
+          <ScalarProperty Name="TotalCount" ColumnName="TotalCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionLogs">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.TransactionLog">
+        <MappingFragment StoreEntitySet="TransactionLog">
+          <ScalarProperty Name="TransactionLogId" ColumnName="TransactionLogId" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="TrackingId" ColumnName="TrackingId" />
+          <ScalarProperty Name="Invoice" ColumnName="Invoice" />
+          <ScalarProperty Name="Refund" ColumnName="Refund" />
+          <ScalarProperty Name="IsInvoiced" ColumnName="IsInvoiced" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="IsArchived" ColumnName="IsArchived" />
+          <ScalarProperty Name="TransactionLogSource" ColumnName="TransactionLogSource" />
+          <ScalarProperty Name="TransactionSummaryId" ColumnName="TransactionSummaryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionPaymentLogs">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.TransactionPaymentLog">
+        <MappingFragment StoreEntitySet="TransactionPaymentLog">
+          <ScalarProperty Name="PaymentId" ColumnName="PaymentId" />
+          <ScalarProperty Name="ProcessingDate" ColumnName="ProcessingDate" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Success" ColumnName="Success" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionSummaries">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.TransactionSummary">
+        <MappingFragment StoreEntitySet="TransactionSummary">
+          <ScalarProperty Name="TransactionSummaryId" ColumnName="TransactionSummaryId" />
+          <ScalarProperty Name="Invoice" ColumnName="Invoice" />
+          <ScalarProperty Name="IsCurrent" ColumnName="IsCurrent" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PaymentMode" ColumnName="PaymentMode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionSummaryBillings">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.TransactionSummaryBilling">
+        <MappingFragment StoreEntitySet="TransactionSummaryBilling">
+          <ScalarProperty Name="TransactionSummaryBillingId" ColumnName="TransactionSummaryBillingId" />
+          <ScalarProperty Name="TransactionSummaryId" ColumnName="TransactionSummaryId" />
+          <ScalarProperty Name="BillingUrl" ColumnName="BillingUrl" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+          <ScalarProperty Name="IsCurrent" ColumnName="IsCurrent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="FacebookUid" ColumnName="FacebookUid" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="WebFormUser" ColumnName="WebFormUser" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="AccountLevelID" ColumnName="AccountLevelID" />
+          <ScalarProperty Name="AccountManagerID" ColumnName="AccountManagerID" />
+          <ScalarProperty Name="IsAccountManager" ColumnName="IsAccountManager" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ForgotPasswordGuid" ColumnName="ForgotPasswordGuid" />
+          <ScalarProperty Name="ForgotPasswordExpiration" ColumnName="ForgotPasswordExpiration" />
+          <ScalarProperty Name="LastSeen" ColumnName="LastSeen" />
+          <ScalarProperty Name="UserRoleId" ColumnName="UserRoleId" />
+          <ScalarProperty Name="UserPlanId" ColumnName="UserPlanId" />
+          <ScalarProperty Name="ClientTypeId" ColumnName="ClientTypeId" />
+          <ScalarProperty Name="EmailCommunication" ColumnName="EmailCommunication" />
+          <ScalarProperty Name="StoreName" ColumnName="StoreName" />
+          <ScalarProperty Name="CurrenteCommercePlatform" ColumnName="CurrenteCommercePlatform" />
+          <ScalarProperty Name="NumberOfShipmentsPerMonth" ColumnName="NumberOfShipmentsPerMonth" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserBinAllocationChargeLogs">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.UserBinAllocationChargeLog">
+        <MappingFragment StoreEntitySet="UserBinAllocationChargeLog">
+          <ScalarProperty Name="UserBinAllocationChargeLogId" ColumnName="UserBinAllocationChargeLogId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="BinAllocationData" ColumnName="BinAllocationData" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserBinAllocationLogs">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.UserBinAllocationLog">
+        <MappingFragment StoreEntitySet="UserBinAllocationLog">
+          <ScalarProperty Name="UserBinAllocationLogId" ColumnName="UserBinAllocationLogId" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="IsCurrent" ColumnName="IsCurrent" />
+          <ScalarProperty Name="BinNumber" ColumnName="BinNumber" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="BinChargeType" ColumnName="BinChargeType" />
+          <ScalarProperty Name="ProvidedCost" ColumnName="ProvidedCost" />
+          <ScalarProperty Name="LastTransactionLogTimestamp" ColumnName="LastTransactionLogTimestamp" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ShelfId" ColumnName="ShelfId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserCompanyMappings">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.UserCompanyMapping">
+        <MappingFragment StoreEntitySet="UserCompanyMapping">
+          <ScalarProperty Name="UserCompanyMappingId" ColumnName="UserCompanyMappingId" />
+          <ScalarProperty Name="CompanyRootUserId" ColumnName="CompanyRootUserId" />
+          <ScalarProperty Name="EmployeeUserId" ColumnName="EmployeeUserId" />
+          <ScalarProperty Name="EmployeeUserRoleId" ColumnName="EmployeeUserRoleId" />
+          <ScalarProperty Name="EmployeeInviteDate" ColumnName="EmployeeInviteDate" />
+          <ScalarProperty Name="EmployeeInvited" ColumnName="EmployeeInvited" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="EmployeeEndDate" ColumnName="EmployeeEndDate" />
+          <ScalarProperty Name="EmployeeIsActive" ColumnName="EmployeeIsActive" />
+          <ScalarProperty Name="EmployeeInviteToken" ColumnName="EmployeeInviteToken" />
+          <ScalarProperty Name="EmployeeInviteEmail" ColumnName="EmployeeInviteEmail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserConnections">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.UserConnection">
+        <MappingFragment StoreEntitySet="UserConnections">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ConnectionId" ColumnName="ConnectionId" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserContacts">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.UserContact">
+        <MappingFragment StoreEntitySet="UserContacts">
+          <ScalarProperty Name="UserContactId" ColumnName="UserContactId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Street_Address1" ColumnName="Street Address1" />
+          <ScalarProperty Name="StreetAddress2" ColumnName="StreetAddress2" />
+          <ScalarProperty Name="HouseNumber" ColumnName="HouseNumber" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ClientCustomerId" ColumnName="ClientCustomerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserCreditCards">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.UserCreditCard">
+        <MappingFragment StoreEntitySet="UserCreditCard">
+          <ScalarProperty Name="UserCreditCardId" ColumnName="UserCreditCardId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="StripeCustomerId" ColumnName="StripeCustomerId" />
+          <ScalarProperty Name="LastFour" ColumnName="LastFour" />
+          <ScalarProperty Name="CardExpiryMonth" ColumnName="CardExpiryMonth" />
+          <ScalarProperty Name="CardExpiryYear" ColumnName="CardExpiryYear" />
+          <ScalarProperty Name="CardType" ColumnName="CardType" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="IsDisabled" ColumnName="IsDisabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserNonReturnableItems">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.UserNonReturnableItem">
+        <MappingFragment StoreEntitySet="UserNonReturnableItems">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="InventoryId" ColumnName="InventoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserPhoneNumbers">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.UserPhoneNumber">
+        <MappingFragment StoreEntitySet="UserPhoneNumber">
+          <ScalarProperty Name="UserPhoneNumberId" ColumnName="UserPhoneNumberId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserPickUpLocations">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.UserPickUpLocation">
+        <MappingFragment StoreEntitySet="UserPickUpLocation">
+          <ScalarProperty Name="UserPickUpLocationId" ColumnName="UserPickUpLocationId" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Street_Address1" ColumnName="Street Address1" />
+          <ScalarProperty Name="StreetAddress2" ColumnName="StreetAddress2" />
+          <ScalarProperty Name="HouseNumber" ColumnName="HouseNumber" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="IsCurrent" ColumnName="IsCurrent" />
+          <ScalarProperty Name="AddressType" ColumnName="AddressType" />
+          <ScalarProperty Name="ShippoAddressId" ColumnName="ShippoAddressId" />
+          <ScalarProperty Name="EasyPostAddressId" ColumnName="EasyPostAddressId" />
+          <ScalarProperty Name="ShippoRetailAddressId" ColumnName="ShippoRetailAddressId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserPickUpRequests">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.UserPickUpRequest">
+        <MappingFragment StoreEntitySet="UserPickUpRequests">
+          <ScalarProperty Name="UserPickUpRequestId" ColumnName="UserPickUpRequestId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="PickUpDate" ColumnName="PickUpDate" />
+          <ScalarProperty Name="PickUpTimeSlot" ColumnName="PickUpTimeSlot" />
+          <ScalarProperty Name="RequestStatus" ColumnName="RequestStatus" />
+          <ScalarProperty Name="UserPickUpLocationId" ColumnName="UserPickUpLocationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserPricingTables">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.UserPricingTable">
+        <MappingFragment StoreEntitySet="UserPricingTable">
+          <ScalarProperty Name="UserPricingTableId" ColumnName="UserPricingTableId" />
+          <ScalarProperty Name="ServiceLevelId" ColumnName="ServiceLevelId" />
+          <ScalarProperty Name="SourceZone" ColumnName="SourceZone" />
+          <ScalarProperty Name="DestinationZone" ColumnName="DestinationZone" />
+          <ScalarProperty Name="StartWeight" ColumnName="StartWeight" />
+          <ScalarProperty Name="EndWeight" ColumnName="EndWeight" />
+          <ScalarProperty Name="PriceType" ColumnName="PriceType" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="BasePrice" ColumnName="BasePrice" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserQuickSetupSteps">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.UserQuickSetupStep">
+        <MappingFragment StoreEntitySet="UserQuickSetupSteps">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ModuleStep" ColumnName="ModuleStep" />
+          <ScalarProperty Name="IsCompleted" ColumnName="IsCompleted" />
+          <ScalarProperty Name="IsSkipped" ColumnName="IsSkipped" />
+          <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserReturnExchangeMappings">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.UserReturnExchangeMapping">
+        <MappingFragment StoreEntitySet="UserReturnExchangeMapping">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="InventoryId" ColumnName="InventoryId" />
+          <ScalarProperty Name="ExchangableInventoryId" ColumnName="ExchangableInventoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserReturnReasons">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.UserReturnReason">
+        <MappingFragment StoreEntitySet="UserReturnReasons">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserRoles">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.UserRole">
+        <MappingFragment StoreEntitySet="UserRoles">
+          <ScalarProperty Name="UserRolesId" ColumnName="UserRolesId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserSavedFilterSearches">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.UserSavedFilterSearch">
+        <MappingFragment StoreEntitySet="UserSavedFilterSearches">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PageTypeEnum" ColumnName="PageTypeEnum" />
+          <ScalarProperty Name="FilterJson" ColumnName="FilterJson" />
+          <ScalarProperty Name="FilterName" ColumnName="FilterName" />
+          <ScalarProperty Name="DateUpdated" ColumnName="DateUpdated" />
+          <ScalarProperty Name="SearchQuery" ColumnName="SearchQuery" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserStoreIntegrations">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.UserStoreIntegration">
+        <MappingFragment StoreEntitySet="UserStoreIntegrations">
+          <ScalarProperty Name="StoreIntegrationId" ColumnName="StoreIntegrationId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="StoreName" ColumnName="StoreName" />
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+          <ScalarProperty Name="Token" ColumnName="Token" />
+          <ScalarProperty Name="PlatformSource" ColumnName="PlatformSource" />
+          <ScalarProperty Name="IsAutomated" ColumnName="IsAutomated" />
+          <ScalarProperty Name="PullOrdersLookBackDays" ColumnName="PullOrdersLookBackDays" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="LastKnownError" ColumnName="LastKnownError" />
+          <ScalarProperty Name="LastErrorTimestamp" ColumnName="LastErrorTimestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserWebHookUrls">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.UserWebHookUrl">
+        <MappingFragment StoreEntitySet="UserWebHookUrl">
+          <ScalarProperty Name="UserWebHookId" ColumnName="UserWebHookId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="WebHookUrl" ColumnName="WebHookUrl" />
+          <ScalarProperty Name="WebHookTypeId" ColumnName="WebHookTypeId" />
+          <ScalarProperty Name="IsZapier" ColumnName="IsZapier" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WarehouseReceivingOrders">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.WarehouseReceivingOrder">
+        <MappingFragment StoreEntitySet="WarehouseReceivingOrder">
+          <ScalarProperty Name="RequestID" ColumnName="RequestID" />
+          <ScalarProperty Name="FulfillmentCenterId" ColumnName="FulfillmentCenterId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="InventoryDetails" ColumnName="InventoryDetails" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="PackageQuantity" ColumnName="PackageQuantity" />
+          <ScalarProperty Name="SendOption" ColumnName="SendOption" />
+          <ScalarProperty Name="ExpectedDateOfArrival" ColumnName="ExpectedDateOfArrival" />
+          <ScalarProperty Name="TrackingDetails" ColumnName="TrackingDetails" />
+          <ScalarProperty Name="PackageType" ColumnName="PackageType" />
+          <ScalarProperty Name="FromUserContactId" ColumnName="FromUserContactId" />
+          <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+          <ScalarProperty Name="LastUpdateBy" ColumnName="LastUpdateBy" />
+          <ScalarProperty Name="BoxPackagingType" ColumnName="BoxPackagingType" />
+          <ScalarProperty Name="IsV2Request" ColumnName="IsV2Request" />
+          <ScalarProperty Name="ReturnId" ColumnName="ReturnId" />
+          <ScalarProperty Name="IsProcessing" ColumnName="IsProcessing" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WarehouseReceivingOrderGeneratingProcesses">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.WarehouseReceivingOrderGeneratingProcess">
+        <MappingFragment StoreEntitySet="WarehouseReceivingOrderGeneratingProcess">
+          <ScalarProperty Name="ProcessId" ColumnName="ProcessId" />
+          <ScalarProperty Name="RequestId" ColumnName="RequestId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Attempt" ColumnName="Attempt" />
+          <ScalarProperty Name="DownloadUrl" ColumnName="DownloadUrl" />
+          <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="InsertBy" ColumnName="InsertBy" />
+          <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WarehouseReceivingOrderInventoryDetails">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.WarehouseReceivingOrderInventoryDetail">
+        <MappingFragment StoreEntitySet="WarehouseReceivingOrderInventoryDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RequestId" ColumnName="RequestId" />
+          <ScalarProperty Name="InventoryId" ColumnName="InventoryId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="FilledQuantity" ColumnName="FilledQuantity" />
+          <ScalarProperty Name="Tracking" ColumnName="Tracking" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WarehouseReceivingOrderInventoryPackagings">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.WarehouseReceivingOrderInventoryPackaging">
+        <MappingFragment StoreEntitySet="WarehouseReceivingOrderInventoryPackaging">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="InventoryDetailsId" ColumnName="InventoryDetailsId" />
+          <ScalarProperty Name="PackagingDetailsId" ColumnName="PackagingDetailsId" />
+          <ScalarProperty Name="ItemQuantity" ColumnName="ItemQuantity" />
+          <ScalarProperty Name="ReceivedQuantity" ColumnName="ReceivedQuantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WarehouseReceivingOrderPackagingDetails">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.WarehouseReceivingOrderPackagingDetail">
+        <MappingFragment StoreEntitySet="WarehouseReceivingOrderPackagingDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="BoxNumber" ColumnName="BoxNumber" />
+          <ScalarProperty Name="TrackingNumber" ColumnName="TrackingNumber" />
+          <ScalarProperty Name="HasSameTracking" ColumnName="HasSameTracking" />
+          <ScalarProperty Name="IsReceived" ColumnName="IsReceived" />
+          <ScalarProperty Name="ReceivedBy" ColumnName="ReceivedBy" />
+          <ScalarProperty Name="ReceivedOn" ColumnName="ReceivedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WarehouseZones">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.WarehouseZone">
+        <MappingFragment StoreEntitySet="WarehouseZones">
+          <ScalarProperty Name="WarehouseZoneId" ColumnName="WarehouseZoneId" />
+          <ScalarProperty Name="FulfillmentCenterId" ColumnName="FulfillmentCenterId" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ZipCodeInfoes">
+      <EntityTypeMapping TypeName="ShipBobLiveModel.ZipCodeInfo">
+        <MappingFragment StoreEntitySet="ZipCodeInfo">
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

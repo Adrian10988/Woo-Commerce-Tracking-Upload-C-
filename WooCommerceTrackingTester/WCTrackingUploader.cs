@@ -22,6 +22,14 @@ namespace WooCommerceTrackingTester
             public string WooCommerceCode { get; set; }
             public bool Succeeded { get; set; }
             public Exception CaughtException { get; set; }
+
+            /// <summary>
+            /// WooCommerce GUID for the tracking ID that is created on their system
+            /// </summary>
+            public string TrackingId { get; set; }
+
+            //WooCommerce time info for when the package was shipped. This is automatically set to the time you upload tracking
+            public DateTime DateShipped { get; set; }
         }
         private string _secret;
         private string _storeUrl;
@@ -88,7 +96,7 @@ namespace WooCommerceTrackingTester
                 var result = _httpClient.PostAsJsonAsync(finalUrl, container).Result;
                 var json = JsonConvert.DeserializeObject<dynamic>(result.Content.ReadAsStringAsync().Result);
 
-                var response = BuildResponse(json);
+                var response = BuildResponse(json, result);
 
                 return response;
             }
@@ -111,7 +119,8 @@ namespace WooCommerceTrackingTester
                     securityFragments = GenerateSecurityUriFragments(formattedBaseUrl, HttpMethod.Post);
                 var finalUrl = formattedBaseUrl + securityFragments;
                 var response = _httpClient.DeleteAsync(string.Format(finalUrl)).Result;
-                return BuildResponse(response);
+                var json = JsonConvert.DeserializeObject<dynamic>(response.Content.ReadAsStringAsync().Result);
+                return BuildResponse(json, response);
             }
             catch (Exception e)
             {
@@ -130,53 +139,32 @@ namespace WooCommerceTrackingTester
 
             return r;
         }
-        private Response BuildResponse(dynamic response)
+        private Response BuildResponse(dynamic response, HttpResponseMessage result)
         {
             var r = new Response();
 
-            HttpStatusCode code = HttpStatusCode.BadRequest;
-
-            if (response.data != null && response.data.status != null)
-            {
-                var c = (string)response.data.status;
-
-                switch (c)
-                {
-                    case "400":
-                        code = HttpStatusCode.BadRequest;
-                        r.Succeeded = false;
-                        break;
-                    case "401":
-                        code = HttpStatusCode.Unauthorized;
-                        r.Succeeded = false;
-                        break;
-                    case "500":
-                        code = HttpStatusCode.InternalServerError;
-                        r.Succeeded = false;
-                        break;
-                    case "200":
-                        code = HttpStatusCode.OK;
-                        r.Succeeded = true;
-                        break;
-                    case "404":
-                        code = HttpStatusCode.NotFound;
-                        r.Succeeded = false;
-                        break;
-                    case "403":
-                        code = HttpStatusCode.Forbidden;
-                        r.Succeeded = false;
-                        break;
-
-                }
-            }
-
+            HttpStatusCode code = result.StatusCode;
             r.Code = code;
 
-            if (response.message != null)
-                r.Message = response.message;
+            if (code == HttpStatusCode.Created || code == HttpStatusCode.OK)
+                r.Succeeded = true;
 
-            if (response.code != null)
-                r.WooCommerceCode = response.code;
+            if (response != null)
+            {
+                if (response.message != null)
+                    r.Message = response.message;
+
+                if (response.code != null)
+                    r.WooCommerceCode = response.code;
+
+                if (response.tracking_id != null)
+                    r.TrackingId = response.tracking_id;
+
+
+                if (response.date_shipped != null)
+                    r.DateShipped = response.date_shipped;
+            }
+
 
             return r;
         }
